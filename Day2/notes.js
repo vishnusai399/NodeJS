@@ -7,3 +7,4 @@
 
 //creating server using http
 //creating log files for http req
+//how to parse urls 
