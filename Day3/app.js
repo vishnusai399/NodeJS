@@ -11,11 +11,9 @@ app.get('/api/users',(req,res)=>{
 app.get('/users',(req,res)=>{
     const html=`
     <ul>
-        ${users.map((user)=>`<li>${user.first_name}</li>`).join("")}
+    ${users.map((user)=>`<li>${user.first_name}</li>`).join("")}
     </ul>`
-    return res.json(html)
 })
-
 
 app.get('/api/users/:id',(req,res)=>{
     const id=req.query.params
