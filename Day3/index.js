@@ -21,11 +21,6 @@ app.use(express.urlencoded({extended:false}))
 
 //Rest apis
 
-app.use(express.urlencoded({extended:false}))
-
-
-//Rest apis
-
 app.get('/api/users',(req,res)=>{
     return res.json(users)
 })
@@ -71,7 +66,6 @@ app.route('/api/users/:id').get((req,res)=>{
         }
         return res.json({ status: 'success' })
     });
-
 })
 app.post('/api/users/',(req,res)=>{
     const body=req.body
